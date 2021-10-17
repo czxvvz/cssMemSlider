@@ -1,0 +1,29 @@
+div#base{text-align: center;}
+div#foto{text-align: center; width: 20%; margin-left: 40%; margin-right: 40%;}
+div#foto img{width: 100%;  animation-play-state: paused; transform-origin: 0% 50%;}
+
+@keyframes foto1{
+0% {transform:rotateY(90deg);content: url("images/face.png");}
+100% { transform:rotateY(0deg);content: url("images/face.png");}
+}
+@keyframes foto2{
+    0% {transform:rotateY(90deg);content: url("images/face2.png");}
+    100% { transform:rotateY(0deg); content: url("images/face2.png");}
+}
+@keyframes foto3{
+    0% {transform:rotateY(90deg);content: url("images/face3.png");}
+    100% { transform:rotateY(0deg);content: url("images/face3.png");}
+}
+@keyframes foto4{
+    0% {transform:rotateY(90deg);content: url("images/face4.png");}
+    100% { transform:rotateY(0deg);content: url("images/face4.png");}
+}
+    
+input#face1:checked ~ div#foto img {animation:foto1 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;}
+input#face2:checked ~ div#foto img {animation:foto2 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;} 
+input#face3:checked ~ div#foto img {animation:foto3 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;}   
+input#face4:checked ~ div#foto img {animation:foto4 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;}

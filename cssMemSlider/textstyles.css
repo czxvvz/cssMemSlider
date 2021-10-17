@@ -1,0 +1,32 @@
+h3{text-align: center; width: 40%; margin-left: 20%; margin-right: 40%; font-size: 5vw; content: 'WWW'}
+
+@keyframes text1{
+    0% {margin-left: 60%;}
+    100% { margin-left: 20%;}
+    }
+@keyframes text2{
+    0% {margin-left: 60%;}
+    100% { margin-left: 20%}
+}
+@keyframes text3{
+    0% {margin-left: 60%;}
+    100% { margin-left: 20%;}
+}
+@keyframes text4{
+    0% {margin-left: 60%;}
+    100% { margin-left: 20%;}
+}  
+
+input#face1:checked ~ h3:before {content: 'WWW' }
+input#face2:checked ~ h3:before {content: 'TTT' }
+input#face3:checked ~ h3:before {content: 'FFF' }
+input#face4:checked ~ h3:before {content: 'KKK' }
+
+input#face1:checked ~ h3 {animation:text1 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;}
+input#face2:checked ~ h3 {animation:text2 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;} 
+input#face3:checked ~ h3 {animation:text3 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;}   
+input#face4:checked ~ h3 {animation:text4 1s; animation-play-state: running; 
+    animation-fill-mode: forwards;}
