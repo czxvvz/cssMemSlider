@@ -1,0 +1,42 @@
+input{width:3vw; height:3vw;}
+
+input#face1:hover {cursor:pointer; }
+input#face2:hover {cursor:pointer;}
+input#face3:hover {cursor:pointer;}
+input#face4:hover {cursor:pointer;}
+
+input[type="radio"]:hover:before{ 
+    content: "";
+    display: block;
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: red;
+}
+
+input[type="radio"]:checked:before{ 
+    content: "";
+    display: block;
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: rgb(100, 0, 0);
+}
+
+input[type="radio"]:before{ 
+    content: "";
+    display: block;
+    position: relative;
+    top: 0.5vw;
+    left: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background: rgb(104, 0, 0);
+}
